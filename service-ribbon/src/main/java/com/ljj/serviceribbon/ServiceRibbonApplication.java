@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient
+@EnableEurekaClient // 只适用于Eureka作为注册中心
+//@EnableDiscoveryClient // 可以是其他注册中心
 public class ServiceRibbonApplication {
 
     public static void main(String[] args) {
